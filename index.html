@@ -12,7 +12,6 @@ session_start();
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="src/js/form.js"></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -141,19 +140,12 @@ session_start();
       <section class="about section" id="about">
         <h2 class="section__title">О нас</h2>
         <div class="about__container container grid">
-          <p class="about__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-            excepturi quis nobis, consequatur, voluptatem at facilis porro
-            voluptas corporis sed ut! Iste sapiente dolore earum possimus est in
-            aperiam obcaecati. Perferendis quas, dolor eius est veritatis
-            perspiciatis animi maxime porro neque qui. Ducimus ipsam omnis
-            alias, quas commodi culpa beatae soluta maxime accusamus, ipsa vitae
-            explicabo at nam tenetur? Necessitatibus blanditiis itaque a est
-            tempore sunt, nemo totam magnam error reiciendis atque soluta magni
-            incidunt repudiandae mollitia. Eveniet temporibus impedit quibusdam,
-            cupiditate, quas vero blanditiis modi facilis ullam sed minus
-            corporis labore molestiae laborum quasi? In totam reprehenderit
-            perspiciatis aliquid?
+          <p class="about__text">&nbsp&nbsp&nbsp&nbspГосударственное предприятие «Опытное конструкторско-технологическое бюро Института электросварки им. Е. О. Патона Национальной академии наук Украины» (ГП «ОКТБ ИЭС им. Е. О. Патона НАНУ») – один из признанных лидеров в области разработки технологических процессов сварки, сварочного оборудования и конструкторско-технической документации. Нашим предприятием практикуется комплексный подход при решении конкретных производственных задач с использованием сврочных технологий:<br>
+            - разработка оптимальных и экономичных технологических решений для организации сварочных процессов в соответствии с техническими условиями Заказчика;<br>
+            - разработка и изготовление сварочного оборудования, сварочных материалов и оснастки; авторский монтаж и наладка сварочного оборудования на объектах Заказчика;<br> - разработка конструкторской документации на технологическое оборудование для электросварки;<br> 
+            - разработка современных автоматизированных систем управления сварочными процессами, их изготовление, монтаж и наладка на предприятии Заказчика;<br> 
+            - авторское сопровождение на протяжении всего жизненного цикла продукции: модернизация сварочного оборудования, изготовление и поставка запчастей (ЗИП), осуществление ремонта в период гарантийного срока и по допсоглашениям; -обучение технического персонала заказчика безопасным методам электросварки.<br> 
+            Обращайтесь – будем рады.
           </p>
         </div>
         <h2 class="section__title">Наши партнеры</h2>
@@ -207,6 +199,13 @@ session_start();
       <section class="contact section">
         <h2 class="section__title">Контакты</h2>
         <div class="contact__container container grid">
+        <div class="info__block text-center mb-2">
+                <h4 class="contact__title">
+                Адрес: ул. Каземира Малевича 15, корпус 7, Киев, 03150, Украина
+                </h4>
+                <hr>
+              </div>
+             
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.69121685449!2d30.509171615847308!3d50.42822449684689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee1fecfffff%3A0x86144b1b0ab332a9!2z0J7QmtCi0JE!5e0!3m2!1sru!2sua!4v1641748545872!5m2!1sru!2sua"
             width="100%"
@@ -244,7 +243,7 @@ session_start();
             </div>
           </div>
           <div id="alert">
-         <!--    <?php 
+            <?php 
             if (isset($_GET['send']) && $_GET['send'] == 'true'){echo '<div class="alert alert-success text-center" role="alert">
              Заявка успешно отравлена. Мы скоро свяжемся с вами
             </div>';}else if ((isset($_GET['send']) && $_GET['send'] == 'false')){
@@ -255,7 +254,7 @@ session_start();
             >
             </div>';
             }
-            ?> -->
+            ?>
           </div>
           <form action="src/mail/mail.php" method="post"class="contact__form section grid form-send" id="contact__form">
             <div class="contacts__inputs grid">
