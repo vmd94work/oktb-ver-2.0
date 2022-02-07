@@ -1,0 +1,338 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="src/js/form.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/libs/Ligthbox/css/lightbox.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/libs/normalize/normalize.css" />
+    <link rel="stylesheet" href="src/libs/JustifieldGallary/justifiedGallery.min.css">
+    <link rel="stylesheet" href="src/libs/Ligthbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Опытное конструкторско-технологическое бюро</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav wrapper">
+        <a href="index.php#home" class="nav__logo"
+          ><img class="logo" src="src/img/logo2.png" alt="logo"
+        /></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.php#home" class="nav__link active-link"
+                ><i class="uil uil-estate nav__icon"></i>Главная</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link"
+                ><i class="uil uil-wrench nav__icon"></i>Услуги</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="uil uil-info-circle nav__icon"></i>О нас</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link"
+                ><i class="uil uil-briefcase-alt nav__icon"></i>Работы</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link"
+                ><i class="uil uil-map-marker nav__icon"></i>Контакты</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="tel:3809XXXXXXXX" class="nav__link"
+                ><i class="uil uil-phone nav__icon"></i>+38(0ХХ)-ХХХ-ХХ-ХХ</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container">
+          <div class="home__data">
+            <h2 class="home__title">
+              Государственное предприятие «Опытное
+              конструкторско-технологическое бюро Института электросварки им.
+              Е.О.Патона Национальной академии наук Украины»
+            </h2>
+            <a href="#contacts" class="btn btn-warning fullwidth">
+              Связатся с нами
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--==================== SERVICE ====================-->
+      <section class="service section text-center" id="services">
+        <h2 class="section__title">Услуги</h2>
+
+        <div class="service__container container">
+          <div class="service__data grid">
+            <div class="service__info">
+              <i class="uil uil-ruler-combined service__icon"></i>
+              <h4 class="service__title">Проектные работы</h4>
+              <p class="service__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+                doloribus!
+              </p>
+            </div>
+            <div class="service__info">
+              <i class="uil uil-cog service__icon"></i>
+              <h4 class="service__title">Разрабока технологии</h4>
+              <p class="service__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                hic?
+              </p>
+            </div>
+            <div class="service__info">
+              <i class="uil uil-bolt service__icon"></i>
+              <h4 class="service__title">Сварочные работы</h4>
+              <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Necessitatibus, autem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== About ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">О нас</h2>
+        <div class="about__container container grid">
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+            excepturi quis nobis, consequatur, voluptatem at facilis porro
+            voluptas corporis sed ut! Iste sapiente dolore earum possimus est in
+            aperiam obcaecati. Perferendis quas, dolor eius est veritatis
+            perspiciatis animi maxime porro neque qui. Ducimus ipsam omnis
+            alias, quas commodi culpa beatae soluta maxime accusamus, ipsa vitae
+            explicabo at nam tenetur? Necessitatibus blanditiis itaque a est
+            tempore sunt, nemo totam magnam error reiciendis atque soluta magni
+            incidunt repudiandae mollitia. Eveniet temporibus impedit quibusdam,
+            cupiditate, quas vero blanditiis modi facilis ullam sed minus
+            corporis labore molestiae laborum quasi? In totam reprehenderit
+            perspiciatis aliquid?
+          </p>
+        </div>
+        <h2 class="section__title">Наши партнеры</h2>
+        <div class="cooperations container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="company__logo"
+                src="src/img/logo__paton.svg"
+                alt="company__logo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="company__logo"
+                src="src/img/ukrspecexp.png"
+                alt="company__logo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="company__logo"
+                src="src/img/UOP_logo.png"
+                alt="company__logo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="company__logo"
+                src="src/img/zaes.png"
+                alt="company__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== Works ====================-->
+      <div class="works" id="works">
+        <h2 class="section__title">Выполненые работы</h2>
+        <div class="gallery-container container" id="mygallery"></div>
+      </div>
+      <!--==================== Works ====================-->
+
+      <!--==================== Projects ====================-->
+      <section class="projects section" id="project">
+        <h2 class="section__title">Актуальные проекты</h2>
+        <div class="project__data container" id="projects"></div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section">
+        <h2 class="section__title">Контакты</h2>
+        <div class="contact__container container grid">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.69121685449!2d30.509171615847308!3d50.42822449684689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee1fecfffff%3A0x86144b1b0ab332a9!2z0J7QmtCi0JE!5e0!3m2!1sru!2sua!4v1641748545872!5m2!1sru!2sua"
+            width="100%"
+            height="450"
+            allowfullscreen=""
+            border-radius='0.25rem'
+            loading="lazy"
+          ></iframe>
+          <div>
+            <div class="contact__information" id="contacts">
+              <div class="info__block text-center mb-2">
+                <h4 class="contact__title">
+                  Директор: Жук Геннадий Владимирович
+                </h4>
+                <a href="tel:3809XXXXXXXX" class="btn btn-outline-warning fullwidth"
+                  >+38(0ХХ)-ХХХ-ХХ-ХХ</a
+                >
+              </div>
+              <div class="info__block text-center mb-2">
+                <h3 class="contact__title">
+                  Заместитель директора: Гарячкин Игорь Владимирович
+                </h3>
+                <a href="tel:3809XXXXXXXX" class="btn btn-outline-warning fullwidth"
+                  >+38(0ХХ)-ХХХ-ХХ-ХХ</a
+                >
+              </div>
+              <div class="info__block text-center mb-2">
+                <h3 class="contact__title">
+                  Главный бухгалтер: Бойко Наталья Ивановна
+                </h3>
+                <a href="tel:3809XXXXXXXX" class="btn btn-outline-warning fullwidth"
+                  >+38(0ХХ)-ХХХ-ХХ-ХХ</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="alert">
+         <!--    <?php 
+            if (isset($_GET['send']) && $_GET['send'] == 'true'){echo '<div class="alert alert-success text-center" role="alert">
+             Заявка успешно отравлена. Мы скоро свяжемся с вами
+            </div>';}else if ((isset($_GET['send']) && $_GET['send'] == 'false')){
+              echo '<div class="alert alert-danger text-center" role="alert">
+              Произошла ошибка! Пожалуйста свяжитесь с нами
+              <a href="tel:3809XXXXXXXX" class="btn btn-warning fullwidth"
+              >+38(0ХХ)-ХХХ-ХХ-ХХ</a
+            >
+            </div>';
+            }
+            ?> -->
+          </div>
+          <form action="src/mail/mail.php" method="post"class="contact__form section grid form-send" id="contact__form">
+            <div class="contacts__inputs grid">
+              <div class="contact__content" id="name-group">
+                <label for="contact__input" class="contact__label form-label">Имя</label>
+                <input
+                required
+                  required
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  
+                />
+              </div>
+              <div class="contact__content " id="email-group">
+                <label for="contact__input" class="contact__label form-label">Email</label>
+                <input
+                required
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  
+                />
+              </div>
+              <div class="contact__content" id="phone-group">
+                <label for="contact__input" class="contact__label form-label"
+                  >Телефон</label
+                >
+                <input
+                required
+                  type="tel"
+                  id="phone"
+                  name="tel"
+                  class="form-control"
+                  
+                />
+              </div>
+              <button id="btn-submit" type="submit" name="submit" class="btn btn-warning fullwidth">
+                Перезвонить вам <i class="uil uil-phone"></i>
+              </button>
+            </div>
+            <div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section text-center">
+      <div class="footer__container container">
+        <ul class="footer__links text-center jcsb">
+          <li>
+            <a href="#about" class="footer__link btn btn-outline-warning">О нас</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link btn btn-outline-warning">Работы</a>
+          </li>
+          <li>
+            <a href="#contacts" class="footer__link btn btn-outline-warning">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">
+        &#169; VitaliiMyronuikProduction. All rigth reserved
+      </p>
+    </footer>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+   
+    <script src="src/libs/Ligthbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="src/libs/JustifieldGallary/jquery.justifiedGallery.min.js"></script>
+    <script src="src/js/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
