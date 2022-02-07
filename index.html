@@ -243,7 +243,7 @@ session_start();
             </div>
           </div>
           <div id="alert">
-            <?php 
+         <!--    <?php 
             if (isset($_GET['send']) && $_GET['send'] == 'true'){echo '<div class="alert alert-success text-center" role="alert">
              Заявка успешно отравлена. Мы скоро свяжемся с вами
             </div>';}else if ((isset($_GET['send']) && $_GET['send'] == 'false')){
@@ -254,7 +254,7 @@ session_start();
             >
             </div>';
             }
-            ?>
+            ?> -->
           </div>
           <form action="src/mail/mail.php" method="post"class="contact__form section grid form-send" id="contact__form">
             <div class="contacts__inputs grid">
